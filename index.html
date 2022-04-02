@@ -11,7 +11,7 @@
      background-color: white;
      height: 70px;
     }
-header{
+    header{
     position: sticky;
     top:0;
     z-index: 99;
@@ -22,6 +22,9 @@ nav{
  height: 77px;
 
 }
+img{ 
+    height: 50px;
+   }
  #right-menu{
     
     display: flex;
@@ -112,6 +115,7 @@ Color: #8b8b99;
 }
 .row{
     display: flex;
+    
 }
 .column{
     flex:25%;
@@ -150,8 +154,7 @@ padding-left: 50px;
 padding-right:50px
 }
 section{
-    display: block;
-    
+    display: block; 
 }
 #store-section{
     box-sizing: border-box;
@@ -191,8 +194,7 @@ text-align: center;
     background-color: #e3b375;
     border-radius: 50%;
     padding: 40px;
-    color: white;
-    
+    color: white;    
 }
 .store-item{
     font-size: 60px;
@@ -204,7 +206,8 @@ text-align: center;
 }
 .store-item-wrapper{
     margin-top: -80px;
-     display: flex;  
+     display: flex;
+     align-items: center;
 }
 .store-item>h3{
     font-family: 'Poppins', sans-serif;
@@ -227,7 +230,7 @@ text-align: center;
     transform: scale(1.2);
 }
 .Testimonial-Card-Image{
-    margin-top: 24px;
+margin-top: 24px;
 Border-Radius: 50%;
 Width: 80px;
 margin-left: auto;
@@ -255,8 +258,8 @@ Font-Style: Italic;
 text-align: center;
 }
 #Testimonial-wrapper{
-    display: flex;
-    margin-bottom: 100px;
+display: flex;
+margin-bottom: 100px;
 }
 .Testimonial-card{
 width:100px;
@@ -278,6 +281,10 @@ transition-property:box-shadow 0.7s;
 }
 #images{
     display: flex;
+}
+.strawberry{
+    width:865px;
+    height:550px;
 }
 #right{
     height:700px;
@@ -375,6 +382,9 @@ transition-property:box-shadow 0.7s;
     margin-left:100px;
     margin-right: 60px;
 }
+#food-video{
+    margin-top: 50px;
+}
 #address-wrapper{
     display: flex;
     margin-top: 100px;
@@ -446,13 +456,112 @@ footer {
     padding: 30px 0px;
     Font-Family:'Poppins', sans-serif;
 }
+
+@media screen and (max-width:600px){
+    header{
+        width: 600px;
+    }
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.store-item-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+#Testimonial-wrapper{
+    display: flex;
+    flex-direction: column;
+    
+}
+#section1{
+    width:600px;
+    height: 100vh;
+}
+#icon-section{
+    width: 600px;
+    
+}
+#store-section{
+    width:600px;
+   
+}
+
+#images{
+    flex-direction: column;
+}
+.strawberry{
+    width:600px;
+    height:550px;
+}
+#food-video{
+   width: 400px;
+   
+}   
+.count{
+    width: 600px;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 600px;
+    background-color: #f6fcfa;  
+}
+#right{
+    width:600px;
+}
+#address-wrapper{
+    flex-direction: column;
+}
+.Testimonial-Card-Image{
+height: 80px;
+}
+.Testimonial-card{
+width:500px;
+margin-right:50px;
+margin-left: 50px;
+
+margin-bottom:30px ;
+}
+#store-desc{
+    margin-left: 150px;
+    margin-right: 100px;
+    margin-bottom: 55px;
+}
+#address-section{
+    text-align: center;
+    width: 600px;
+} 
+footer{
+    width: 600px;
+} 
+#text-wrapper>h3{
+    text-align: left;
+}
+#text-wrapper>p{
+
+    text-align:left;
+    margin-top:-30px;
+} 
+
+#btn {
+margin-left: 100px;
+}
+#address-wrapper{
+    margin-left: 20px;
+}
+
+.form-table{
+   width:550px;
+}
+}
+
      </style>
 </head>
+
     <body style="margin:0">
     <header id="topbar">
-        <nav>
+        <nav >
             <div class="left-menu">
-            <img style="height: 50px;" src="https://mobirise.com/extensions/organicamp/assets/images/logo1.jpg">
+            <img  src="https://mobirise.com/extensions/organicamp/assets/images/logo1.jpg">
             
                 </div>
             <div id="right-menu">
@@ -487,7 +596,7 @@ footer {
                 <p style="text-align: center;">With nutrition, all the vital functions of the body are connected. It is the source of the development of tissues and cells, their constant renewal,<br> the saturation of man with energy.</p>  
             </div>
         </section>
-        <section>
+        <section id="icon-section">
         <div class="row">
             <div style="background-color: #5acda6;" class="column">
                 <div class="icon"><a class="stepicon"><i class="fa fa-cut"></i></a></div>
@@ -581,12 +690,13 @@ footer {
                     <section id="section-3">
                         <div id="images">
                         <div class="left">
-                            <img style="width:850px;height:550px;"src="https://mobirise.com/extensions/organicamp/assets/images/19.jpg">
+                            <img class="strawberry" src="https://mobirise.com/extensions/organicamp/assets/images/19.jpg">
                         </div>
 
                         <div id="right">
                             <div id="text-wrapper">
-                                <h3 >Follow <br>Us</h3>
+                                <h3 >Follow<br>Us
+                                </h3>
                                 <p>A wide range of <br> products; many<br> unusual and tasty <br>products; courteous<br> staff.</p>
         
                                 <input id="email" placeholder="Your Email">
@@ -625,14 +735,15 @@ footer {
                            <hr style="width:10%;color:brown;background-color: brown;">
                             <div>
                                 
-                                <video controls autoplay style="margin-top: 50px;"> 
+                                <video id="food-video"controls autoplay > 
                                     <source src="video/video.mp4" type="video/mp4">
                                 </video>
                             </div>
                        </div>
+                       </section>
                        <section id="address-section">
                         <div id="address-wrapper">
-                            <div style="width:50%">
+                            <div >
                                 <p class="green-heading">Contact Us</p>
                                 <h3 class="section-heading">Address Information</h3>
                                 <p class="section-description">Overeating is one of the most common causes of overweight and digestive problems.</p>
@@ -645,7 +756,7 @@ footer {
                                 <p class="address-lines">
                                     Roeterseiland Campus Building E<br>6th floor London<br>Monday to Friday : 9am to 8pm<br>examplemail.mail.com</p>
                             </div>
-                            <div  style="width:50%">
+                            <div class="form-table">
                                 <p class="green-heading">Meet Our Team</p>
                                 <h3 class="section-heading">Get In Touch</h3>
                                 <p class="section-description">The task of proper nutrition - to remove from the diet harmful food and enrich it useful.</p>
